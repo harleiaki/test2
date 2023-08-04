@@ -8,3 +8,4 @@ seaborn==0.12.2
 plotly-express==0.4.1
 image==1.5.33
 pilgram==1.2.1
+pytube==15.0.0
