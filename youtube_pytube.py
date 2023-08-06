@@ -9,6 +9,7 @@ def main():
     
     if st.button("download"):
         video_object=YouTube(path)
+                writer.save
         st.write("Video Title:" +  str(video_object.title))
         st.write(" Number of views:" + str(video_object.views))
         if options == "audio":
@@ -18,7 +19,7 @@ def main():
         elif options == "lowest_resolution":  
              video_object.streams.get_lowest_resolution().download()        
     if st.button("view"):
-        writer.save
+
         st.video(path)
 
 
