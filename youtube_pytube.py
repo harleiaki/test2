@@ -7,7 +7,7 @@ def main():
     path = st.text_input("Enter url of your video")
     options = st.selectbox("select the type of download", ("audio","highest_resolution","lowest_resolution" ))
     
-    if st.button("download"):
+    if st.download_button("download"):
         video_object=YouTube(path)
         st.write("Video Title:" +  str(video_object.title))
         st.write(" Number of views:" + str(video_object.views))
