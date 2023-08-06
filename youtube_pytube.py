@@ -18,6 +18,7 @@ def main():
         elif options == "lowest_resolution":  
              video_object.streams.get_lowest_resolution().download()        
     if st.button("view"):
+        writer.save
         st.video(path)
 
 
