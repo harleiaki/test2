@@ -1,7 +1,6 @@
 import streamlit as st 
 from pytube  import YouTube 
-import base64
-from io import BytesIO
+import os
 
 def main():
     path = st.text_input("Enter url of your video")
